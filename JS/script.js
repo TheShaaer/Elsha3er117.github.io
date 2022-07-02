@@ -75,3 +75,17 @@ const nav = document.querySelector(".nav"),
                 allSection[i].classList.toggle("open");
             }
         }
+/*=============== email ==============*/ 
+let sendEmailBtn = document.getElementById("m_btn")
+let emailIn = document.getElementById("m_mail");
+let nameIn = document.getElementById("m_name");
+let subjectIn = document.getElementById("m_sub");
+let messageIn = document.getElementById("m_mess");
+function sendEmail() {
+    let url = `https://mail.google.com/mail/?view=cm&ui=2&tf=0&fs=1&to=${encodeURIComponent('3bdelrhmanmohamed117@gmail.com')}
+&su=${encodeURIComponent(subjectIn.value)}&body=${encodeURIComponent(`Hello, my name is ${nameIn.value}!` +messageIn.value)}`
+    
+    window.open(url, "_blank").focus();
+}
+
+sendEmailBtn.addEventListener('click',sendEmail);
