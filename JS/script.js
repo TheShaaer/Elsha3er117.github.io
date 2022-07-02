@@ -5,6 +5,10 @@ var typed = new Typed(".typing",{
     BackSpeed:50,
     loop:true
 }) 
+/*===============  new tab==============*/ 
+function openInNewTab(url) {
+    window.open(url, '_blank').focus();
+}
 /*=============== Aside ==============*/ 
 const nav = document.querySelector(".nav"),
     navList = nav.querySelectorAll("li"),
