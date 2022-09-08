@@ -78,6 +78,7 @@ const nav = document.querySelector(".nav"),
 /*=============== email ==============*/ 
 let sendEmailBtn = document.getElementById("m_btn")
 let emailIn = document.getElementById("m_mail");
+consle.log(emailIn);
 let nameIn = document.getElementById("m_name");
 let subjectIn = document.getElementById("m_sub");
 let messageIn = document.getElementById("m_mess");
